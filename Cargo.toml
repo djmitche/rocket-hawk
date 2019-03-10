@@ -1,0 +1,16 @@
+[package]
+name = "rocket-hawk"
+version = "0.1.0"
+authors = ["Dustin J. Mitchell <dustin@mozilla.com>"]
+license = "MPL-2.0"
+readme = "README.md"
+repository = "https://github.com/taskcluster/rocket-hawk"
+documentation = "https://docs.rs/rocket-hawk/"
+homepage = "https://docs.rs/rocket-hawk/"
+description = "Hawk Implementation for Rust using Rocket"
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+# can't use 1.0.5 because rocket currently depends on an old version of ring
+hawk = "^1.0.4"
